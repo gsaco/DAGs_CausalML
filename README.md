@@ -1,5 +1,10 @@
 # DAGs and Causal Machine Learning Analysis
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![R](https://img.shields.io/badge/R-4.0%2B-blue)](https://www.r-project.org/)
+[![Julia](https://img.shields.io/badge/Julia-1.6%2B-purple)](https://julialang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository contains a comprehensive analysis of Directed Acyclic Graphs (DAGs) and causal inference methods implemented in three programming languages: Python, Julia, and R. The project explores fundamental concepts in causal machine learning through three distinct analytical tasks.
 
 ## Repository Structure
