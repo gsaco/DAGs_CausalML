@@ -1,0 +1,25 @@
+digraph DamnedDAG {
+    rankdir=LR;
+    node [shape=ellipse, style=filled, fontsize=14, fontname="Arial"];
+    edge [fontsize=12, fontname="Arial"];
+    
+    U1 [fillcolor=lightsteelblue, label="U1\n(Unobserved)"];
+    U2 [fillcolor=lightgreen, label="U2\n(Unobserved)"];
+    Z [fillcolor=lightcoral, label="Z\n(Observable)"];
+    X [fillcolor=lightyellow, label="X\n(Treatment)"];
+    Y [fillcolor=lightpink, label="Y\n(Outcome)"];
+    
+    U1 -> X [label="affects"];
+    U1 -> Z [label="affects"];
+    U2 -> Z [label="affects"];
+    U2 -> Y [label="affects"];
+    Z -> Y [label="affects"];
+    X -> Y [label="causal effect", color=red, penwidth=2];
+    
+    // Arrange nodes for better layout
+    {rank=same; U1; U2}
+    {rank=same; Z; X}
+    
+    labelloc="t";
+    label="The 'Damned if you do, damned if you don't' DAG\nU1→{X,Z}, U2→{Z,Y}, Z→Y, X→Y";
+}

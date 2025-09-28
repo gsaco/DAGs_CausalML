@@ -8,10 +8,10 @@ ehthumbs.db
 Thumbs.db
 
 # Python virtual environment folders
-dags/
 venv/
 env/
 .env/
+dags/
 
 # Julia package environment folder
 Julia/dagj/

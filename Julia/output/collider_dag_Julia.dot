@@ -1,0 +1,15 @@
+digraph ColliderDAG {
+    rankdir=TB;
+    node [shape=ellipse, style=filled, fontsize=14, fontname="Arial"];
+    edge [fontsize=12, fontname="Arial"];
+    
+    Talent [fillcolor=lightcoral, label="Talent\n(Cause 1)"];
+    Effort [fillcolor=lightsteelblue, label="Effort\n(Cause 2)"];
+    GradSchool [fillcolor=lightgoldenrodyellow, label="Grad School\n(Collider)"];
+    
+    Talent -> GradSchool [label="influences"];
+    Effort -> GradSchool [label="influences"];
+    
+    labelloc="t";
+    label="Collider DAG: Talent and Effort → Graduate School";
+}

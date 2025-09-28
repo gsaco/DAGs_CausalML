@@ -1,0 +1,16 @@
+digraph ConfounderDAG {
+    rankdir=LR;
+    node [shape=ellipse, style=filled, fontsize=14, fontname="Arial"];
+    edge [fontsize=12, fontname="Arial"];
+    
+    Ability [fillcolor=lightblue, label="Ability\n(Confounder)"];
+    Education [fillcolor=lightgreen, label="Education\n(Treatment)"];
+    Income [fillcolor=lightyellow, label="Income\n(Outcome)"];
+    
+    Ability -> Education [label="affects"];
+    Ability -> Income [label="affects"];
+    Education -> Income [label="affects"];
+    
+    labelloc="t";
+    label="Confounder DAG: Ability confounds Education → Income";
+}

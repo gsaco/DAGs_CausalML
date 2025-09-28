@@ -1,0 +1,16 @@
+digraph MediationDAG {
+    rankdir=LR;
+    node [shape=ellipse, style=filled, fontsize=14, fontname="Arial"];
+    edge [fontsize=12, fontname="Arial"];
+    
+    Education [fillcolor=lightblue, label="Education\n(Treatment)"];
+    JobQuality [fillcolor=lightgreen, label="Job Quality\n(Mediator)"];
+    Income [fillcolor=lightyellow, label="Income\n(Outcome)"];
+    
+    Education -> JobQuality [label="affects"];
+    JobQuality -> Income [label="affects"];
+    Education -> Income [label="direct effect", style=dashed, color=red];
+    
+    labelloc="t";
+    label="Mediation DAG: Education → Job Quality → Income";
+}

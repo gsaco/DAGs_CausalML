@@ -1,0 +1,22 @@
+digraph Part2DAG {
+    rankdir=LR;
+    node [shape=ellipse, style=filled, fontsize=14, fontname="Arial"];
+    edge [fontsize=12, fontname="Arial"];
+    
+    Z3 [fillcolor=lightcoral, label="Z3\n(Confounder)"];
+    Z1 [fillcolor=lightsteelblue, label="Z1\n(Confounder)"];
+    Z2 [fillcolor=lightgreen, label="Z2\n(Mediator/Confounder)"];
+    X [fillcolor=lightyellow, label="X\n(Treatment)"];
+    Y [fillcolor=lightpink, label="Y\n(Outcome)"];
+    
+    Z3 -> Z2 [label="affects"];
+    Z3 -> Y [label="affects"];
+    Z1 -> X [label="affects"];
+    Z1 -> Y [label="affects"];
+    Z2 -> X [label="affects"];
+    Z2 -> Y [label="affects"];
+    X -> Y [label="causal effect", color=red, penwidth=2];
+    
+    labelloc="t";
+    label="Part 2 DAG: Multiple Controls Analysis\nEstimating causal effect of X → Y";
+}
