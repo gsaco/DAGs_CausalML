@@ -1,0 +1,19 @@
+# R dependencies for DAGs and Causal ML assignment
+# Install these packages using: install.packages(c("package_name1", "package_name2", ...))
+
+# Core data manipulation and visualization
+dplyr
+ggplot2
+tidyr
+broom
+
+# DAG analysis and causal inference
+dagitty
+ggdag
+
+# Additional visualization and formatting
+gridExtra
+xtable
+
+# To install all dependencies at once:
+# install.packages(c("dplyr", "ggplot2", "tidyr", "broom", "dagitty", "ggdag", "gridExtra", "xtable"))
