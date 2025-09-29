@@ -107,8 +107,7 @@ DAGs_CausalML/
 
 1. **Causal Structure Matters**: The choice of control variables must be guided by causal theory, not just statistical significance
 2. **Simpson's Paradox is Real**: Aggregated analysis can lead to completely opposite conclusions compared to stratified analysis
-3. **Language-Specific Advantages**: Each programming language offers unique strengths for causal analysis
-4. **Bias-Variance Tradeoff**: Including more controls doesn't always improve causal estimates and can sometimes introduce bias
+3. **Bias-Variance Tradeoff**: Including more controls doesn't always improve causal estimates and can sometimes introduce bias
 
 ## Installation and Usage
 
